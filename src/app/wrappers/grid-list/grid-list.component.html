@@ -1,0 +1,10 @@
+<mat-grid-list [cols]="colspan" rowHeight="100px">
+   @for (innerField of field.fieldGroup; track field) {
+     <mat-grid-tile
+     [colspan]="innerField?.props?.['colspan'] || colspan"
+     [rowspan]="innerField?.props?.['rowspan'] || 2"
+       >
+      <formly-field [field]="innerField" style="width: 100%;height: inherit;"></formly-field>
+      </mat-grid-tile>
+   }
+ </mat-grid-list>

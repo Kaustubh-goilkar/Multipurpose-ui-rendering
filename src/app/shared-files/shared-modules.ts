@@ -11,7 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -25,7 +25,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    BrowserAnimationsModule
     
   ],
   exports: [
@@ -39,7 +40,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    BrowserAnimationsModule
     
   ]
 })
